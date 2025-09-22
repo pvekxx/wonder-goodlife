@@ -1,3 +1,4 @@
+/* eslint-disable @typescript-eslint/no-explicit-any */
 export type Brand = "현대" | "기아";
 export type Segment = "경차" | "소형" | "준중형" | "중형" | "준대형" | "대형";
 export type Fuel = "전기" | "하이브리드" | "가솔린" | "디젤" | "수소";

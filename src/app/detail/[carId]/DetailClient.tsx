@@ -1,7 +1,7 @@
 "use client";
 
 import { notFound } from "next/navigation";
-import { useMemo, useState } from "react";
+import { useEffect, useMemo, useState } from "react";
 import {
     getModelByCode,
     calculateQuote,
@@ -16,7 +16,11 @@ import TrimFeatures from "./components/TrimFeatures";
 
 export default function DetailClient({ carId }: { carId: string }) {
     const car = getModelByCode(carId);
-    if (!car) return notFound();
+    useEffect(() => {
+        if (!car) notFound();
+    }, [car]);
+
+    if (!car) return null;
 
     // 트림 상태
     const [trimCode, setTrimCode] = useState(car.trims[0].code);

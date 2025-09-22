@@ -13,9 +13,6 @@ export default function QuoteSummary({
     selectedOptions: { code: string; name?: string; price: number; included?: boolean }[];
     lines?: { label: string; amount: number }[];
 }) {
-    const nameOf = (code: string) =>
-        selectedOptions.find(o => o.code === code)?.name ?? code.toUpperCase();
-
 
     // 라인 분리: 기본가 / 옵션합계 / 할인들 / 총액
     const baseLine = lines.find(l => l.label.startsWith("기본가"));
