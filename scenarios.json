@@ -1,0 +1,32 @@
+[
+    {
+        "model": "ray",
+        "trim": "prestige",
+        "options": "style,daw",
+        "color": "UD"
+    },
+    {
+        "model": "seltos",
+        "trim": "16t-xline",
+        "options": "daw,sconn",
+        "color": "SWP"
+    },
+    {
+        "model": "sportage-hev",
+        "trim": "prestige",
+        "options": "style",
+        "color": "SWP"
+    },
+    {
+        "model": "k5-hev",
+        "trim": "best",
+        "options": "style,builtincam2",
+        "color": "AGT"
+    },
+    {
+        "model": "niro-ev",
+        "trim": "earth",
+        "options": "rspa,connect,sound",
+        "color": "M4B"
+    }
+]
